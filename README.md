@@ -7,7 +7,7 @@ les identifiants créés par l'enseignant et accèdent uniquement aux classes o�
 - **Front** : HTML/CSS/JavaScript natifs (modules ES), aucune étape de build.
 - **Hébergement** : Vercel (site statique + fonctions serverless dans `api/`).
 - **Base et authentification** : Supabase (PostgreSQL, Auth, Storage) avec sécurité RLS.
-- **Code** : pensez à le publier sur GitHub, puis à connecter le dépôt à Vercel.
+- **Dépôt** : [github.com/senes0574-collab/myclassroom](https://github.com/senes0574-collab/myclassroom) — branche main.
 
 ---
 
