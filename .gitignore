@@ -1,0 +1,16 @@
+# Dépendances
+node_modules/
+
+# Déploiement
+.vercel/
+
+# Secrets locaux
+.env
+.env.*
+config.json
+
+# Système et outils
+.tmp/
+.DS_Store
+Thumbs.db
+*.log

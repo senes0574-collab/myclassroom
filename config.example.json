@@ -1,0 +1,6 @@
+{
+  "supabaseUrl": "https://votre-projet.supabase.co",
+  "supabaseAnonKey": "votre-cle-anon-publique",
+  "studentEmailDomain": "eleves.myclassroom.app",
+  "appName": "Myclassroom"
+}

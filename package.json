@@ -1,0 +1,14 @@
+{
+  "name": "myclassroom",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plateforme de classe virtuelle — enseignant, contenus, planning, discussion",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "test:pdf": "node scripts/test-demo-pdf.mjs"
+  }
+}
