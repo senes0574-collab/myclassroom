@@ -200,7 +200,21 @@ export function formModal({ title, fields, submitLabel = 'Enregistrer', onSubmit
 
   form.prepend(errorBox);
 
-  const submitBtn = el('button', { class: 'btn btn-primary', type: 'submit' }, submitLabel);
+  // Bouton de soumission masqué : permet la validation par la touche Entrée,
+  // le bouton visible étant dans le pied de la modale (hors du formulaire).
+  form.append(el('button', {
+    type: 'submit',
+    'aria-hidden': 'true',
+    tabindex: '-1',
+    style: { position: 'absolute', left: '-9999px', width: '1px', height: '1px', opacity: '0' },
+  }));
+
+  // Le bouton du pied est hors <form> : on déclenche la soumission explicitement.
+  const submitBtn = el('button', {
+    class: 'btn btn-primary',
+    type: 'button',
+    onclick: () => form.requestSubmit(),
+  }, submitLabel);
   const cancelBtn = el('button', { class: 'btn btn-ghost', type: 'button', onclick: () => close() }, 'Annuler');
 
   const { close } = modal({
